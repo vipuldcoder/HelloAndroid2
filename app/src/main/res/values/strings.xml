@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+
+    //Name of the School
+    <string name="school_name">Udacity</string>
+
+    //Contact Number Of the School
+    <string name="contact_no_school">+1-650-555-5555</string>
+
+    //Website Link zzof School
+    <string name="school_website">www.udacity.com</string>
+
+    //Address of the School
+    <string name="school_address">2465 Latham St, Mountain View, CA 94043</string>
+</resources>
