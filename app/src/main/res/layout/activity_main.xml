@@ -1,47 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.vipul.helloandroid.MainActivity">
+    android:orientation="vertical">
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_value"
-        android:layout_marginTop="@dimen/margin_value"
-        android:scaleType="fitCenter"
-        android:src="@drawable/main" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.vipul.helloandroid.MainActivity">
 
-    <TextView
-        android:id="@+id/bname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding_values"
-        android:text="@string/school_name"
-        android:textSize="@dimen/text_size"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding_values"
-        android:text="@string/contact_no_school"
-        android:autoLink="phone"
-        android:textSize="@dimen/text_size"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding_values"
-        android:text="@string/school_website"
-        android:autoLink="web"
-        android:textSize="@dimen/text_size"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/padding_values"
-        android:text="@string/school_address"
-        android:autoLink="map"
-        android:textSize="@dimen/text_size" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/bname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_university"
+            android:drawablePadding="5dp"
+            android:padding="@dimen/padding_values"
+            android:text="@string/school_name"
+            android:textColorLink="@android:color/black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:drawableLeft="@drawable/ic_action_call"
+            android:drawablePadding="5dp"
+            android:padding="@dimen/padding_values"
+            android:text="@string/contact_no_school"
+            android:textColorLink="@android:color/black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:drawableLeft="@drawable/ic_action_website"
+            android:drawablePadding="5dp"
+            android:padding="@dimen/padding_values"
+            android:text="@string/school_website"
+            android:textColorLink="@android:color/black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="map"
+            android:drawableLeft="@drawable/ic_action_address"
+            android:drawablePadding="5dp"
+            android:padding="@dimen/padding_values"
+            android:text="@string/school_address"
+            android:textColorLink="@android:color/black"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+</ScrollView>
