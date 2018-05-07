@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        //Margin Value For Images
-        <dimen name="margin_value">20dp</dimen>
-
-        //Text Size Values
-        <dimen name="text_size">16sp</dimen>
+        /Text Size Values
+        <dimen name="text_size">22sp</dimen>
 
         //For Padding Values
         <dimen name="padding_values">10dp</dimen>
